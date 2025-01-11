@@ -1,20 +1,9 @@
-import  fs from 'fs';
-import  path from 'path';
-import { fileURLToPath } from 'url';
+import express from 'express';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-console.log(__dirname);
+PORT = process.env.PORT || 3000;
+const app = express();
 
-// read directory
-fs.readdir(__dirname, (err, files) => { 
-    files.forEach(file => { 
-        console.log(file); 
-    });
+
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
 });
-// read file
-fs.readFile(__dirname + '/server.js', 'utf8', (err, data) => { 
-    console.log(data); 
-});
-// const filename = ''
-// fs.readFile()
