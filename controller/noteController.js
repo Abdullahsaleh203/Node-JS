@@ -2,7 +2,7 @@ import generator from '../util/generator.js';
 
 export const getNotes = (req, res) => { 
     const seqId = generator.generator();
-    res.send('Notes route');
+    res.send('Notes route' +seqId);
 };
 
 export const createNote = (req, res) => {
