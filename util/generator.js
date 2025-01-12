@@ -1,6 +1,10 @@
-import Generator from 'sequential-ids';
+import sequential from 'sequential-ids';
 
-export const generator = new Generator({
+const generator = new sequential.Generator({
     digits: 6, letters: 3,
     restore: "000"
 });
+
+generator.start();
+
+export default generator;
