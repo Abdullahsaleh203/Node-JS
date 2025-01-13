@@ -1,4 +1,4 @@
-export class Note {
+class Note {
     constructor(noteId,title, content, createdOn, createdBy) {
         this.noteId = noteId;
         this.createdOn = createdOn;
@@ -8,4 +8,4 @@ export class Note {
     }
 }
 
-// export default Note;
+export default Note;

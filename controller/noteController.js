@@ -1,6 +1,6 @@
 import generator from '../Util/generator.js';
 import myStorage from '../Util/memory.stoage.js';
-import Note from '../model/node.model.js';
+import  Note from '../model/node.model.js';
 
 
 
@@ -11,6 +11,7 @@ export const getNotes = (req, res) => {
     // myStorage.store.setItem(seqId2, '2nd key');
     // let keys = myStorage.getKeys(myStorage.store);
     // let values = myStorage.getValues(myStorage.store);
+    let noteObject = new Note()
     res.send(`Notes route number ${seqId}`);
 }; 
 
