@@ -1,9 +1,12 @@
-import sequential from 'sequential-ids';
+import Sequential from 'sequential-ids';
+// إنشاء مثيل جديد للمولد
 
-const generator = new sequential.Generator({
-    digits: 6, letters: 3,
-    restore: "000"
-});
+const generator = new Sequential.Generator({
+    digits: 6,
+    letters: 3,
+    
+    restore: "000" // استعادة آخر معرف مُخزن
+  });
 
 generator.start();
 

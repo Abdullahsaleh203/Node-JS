@@ -29,7 +29,7 @@ app.get("/", (req, res) => {
 });
 
 // Use the notes router for all routes starting with /notes
-app.use("/notes", notesRouter);
+app.use("/api/v1", notesRouter);
 
 
 // Start the server
