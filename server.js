@@ -24,7 +24,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cors());
 
 // Routes
-app.get("/", (req, res) => {
+app.get("/2", (req, res) => {
     res.send("Hello World!");
 });
 
