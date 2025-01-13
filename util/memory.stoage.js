@@ -12,11 +12,11 @@ export const getkeys = (myStorage) => {
     }
     return keys;
 }
-export var getValues = (myStorage) => {
-    var values  = [];
+export const getValues = (myStorage) => {
+    let values  = [];
     for (let i=0; i<myStorage.length; i++) {
-        var key = myStorage.key(i);
-        var value = myStorage.getItem(key);
+        let key = myStorage.key(i);
+        let value = myStorage.getItem(key);
         values.push(value);
     }
     return values;
