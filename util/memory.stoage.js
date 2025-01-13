@@ -4,8 +4,7 @@ import MemoryStorage from 'memorystorage';
 let myStorage = new MemoryStorage('my-app');
 
 
-
-export const getkey = (myStorage) => {
+export const getkeys = (myStorage) => {
     let keys = [];
     for (let i=0; i<myStorage.length; i++) {
         let key = myStorage.key(i);
@@ -13,15 +12,16 @@ export const getkey = (myStorage) => {
     }
     return keys;
 }
-export const getValues = (myStorage) => {
-    let values  = [];
+export var getValues = (myStorage) => {
+    var values  = [];
     for (let i=0; i<myStorage.length; i++) {
-        let key = myStorage.key(i);
-        let value = myStorage.getItem(key);
+        var key = myStorage.key(i);
+        var value = myStorage.getItem(key);
         values.push(value);
     }
     return values;
 }
+
 
 
 export default myStorage;
