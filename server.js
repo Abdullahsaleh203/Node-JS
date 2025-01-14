@@ -1,14 +1,6 @@
 import express from "express";
 import cors from "cors";
 import notesRouter from "./router/noteRoute.js";
-// import mongoose from "mongoose";
-
-
-// Connect to MongoDB
-// mongoose.connect("mongodb://localhost/notesdb", {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-// });
 
 // `process.env.PORT` is used to get the port number from the environment
 const PORT = process.env.PORT || 3000;
